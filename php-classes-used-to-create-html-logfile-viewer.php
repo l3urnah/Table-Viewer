@@ -1162,10 +1162,14 @@ echo "<div style='margin-top:5px;'>
         }
 
         function homeButton() {
-            len = "json_viewer.php".length;
+            // this was used in an older version with separate files 
+            // and just reloads the page to clear after a file was loaded
+            //len = "json_viewer.php".length;
+            len = "index.php".length;
             currentUrl = location.href;
-            replacedUrl = currentUrl.split('?')[0];
-            location.href = replacedUrl.slice(0, - len);
+            //replacedUrl = currentUrl.split('?')[0];
+            //location.href = replacedUrl.slice(0, - len);
+            location.href = currentUrl.slice(0, - len);
         }
         
         function toggleLines() {
