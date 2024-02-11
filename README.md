@@ -1,2 +1,2 @@
 # Table-Viewer
-something to show soms logs
+something to show some logs and terminals from ansible runs 
